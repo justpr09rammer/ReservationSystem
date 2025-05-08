@@ -1,0 +1,176 @@
+@model ReservationSystem.Models.Entities.Reservation
+
+@{
+    ViewData["Title"] = "Rezervasiya Detalları";
+}
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervasiya Detalları</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for the card */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Card styling */
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            overflow: hidden;
+        }
+
+        /* Card header */
+        .card-header {
+            background-color: #17a2b8;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        /* Card body styling */
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        /* Description list styling */
+        dl {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        dt {
+            font-weight: bold;
+            width: 30%;
+            margin-bottom: 8px;
+        }
+
+        dd {
+            width: 70%;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        /* Footer button styling */
+        .card-footer {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .btn-outline-secondary {
+            border: 2px solid #6c757d;
+            color: #6c757d;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+            .btn-outline-secondary:hover {
+                background-color: #6c757d;
+                color: white;
+            }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333;
+            }
+
+        /* Icon styling */
+        .fas {
+            font-size: 1.2rem;
+        }
+
+        /* Responsive design */
+        @@media (max-width: 576px) {
+            .container
+
+        {
+            padding: 1rem;
+        }
+
+        .card-header {
+            padding: 1rem;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .btn {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <h3 class="mb-0">Rezervasiya Detalları</h3>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-4">Ad:</dt>
+                            <dd class="col-sm-8">@Model.FirstName</dd>
+
+                            <dt class="col-sm-4">Soyad:</dt>
+                            <dd class="col-sm-8">@Model.LastName</dd>
+
+                            <dt class="col-sm-4">Telefon:</dt>
+                            <dd class="col-sm-8">@Model.PhoneNumber</dd>
+
+                            <dt class="col-sm-4">Tarix:</dt>
+                            <dd class="col-sm-8">@Model.ReservationDate.ToString("dd.MM.yyyy")</dd>
+
+                            <dt class="col-sm-4">Saat:</dt>
+                            <dd class="col-sm-8">@Model.ReservationTime.ToString(@"hh\:mm")</dd>
+                        </dl>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="fas fa-arrow-left me-1"></i>Geri
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">
+                                <i class="fas fa-trash me-1"></i>Sil
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

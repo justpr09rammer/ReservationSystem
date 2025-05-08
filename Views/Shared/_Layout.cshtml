@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Rezervasiya Sistemi</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">Rezervasiya Sistemi</a>
+              
+                <div class="navbar-links">
+                    <ul class="nav-list">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li><a href="/Reservation/Index">Rezervasiyalarım</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="/Reservation/Create">Rezervasiya Et</a></li>
+                        }
+                    </ul>
+                    <ul class="nav-list">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li><span>Salam, @User.Identity.Name!</span></li>
+                            <li>
+                                <form asp-controller="Account" asp-action="Logout" method="post">
+                                    <button type="submit" class="logout-btn">Çıxış</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li><a href="/Account/Login">Giriş</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+@model ReservationSystem.Models.Entities.Reservation
+@{
+    ViewData["Title"] = "Rezervasiyanı Sil";
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervasiyanı Sil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #f59e0b;
+            --danger: #ef4444;
+            --danger-dark: #dc2626;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .delete-container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .delete-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            padding: 2.5rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        .delete-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(31, 38, 135, 0.15);
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .card-header h2 {
+            color: var(--danger-dark);
+            font-weight: 700;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--danger), var(--secondary));
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .alert-warning {
+            background-color: #fef3c7;
+            color: #92400e;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .reservation-details {
+            margin: 1.5rem 0;
+        }
+
+        .detail-row {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: var(--dark);
+            width: 120px;
+        }
+
+        .detail-value {
+            color: var(--dark);
+            opacity: 0.9;
+            flex: 1;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 0.875rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+            flex: 1;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, var(--danger) 0%, var(--danger-dark) 100%);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 6px rgba(239, 68, 68, 0.1);
+        }
+
+        .btn-danger:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(239, 68, 68, 0.15);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(99, 102, 241, 0.05);
+        }
+
+        @media (max-width: 480px) {
+            .delete-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .card-header h2 {
+                font-size: 1.5rem;
+            }
+            
+            .btn-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="delete-container">
+        <div class="delete-card">
+            <div class="card-header">
+                <h2><i class="fas fa-exclamation-triangle"></i> Rezervasiyanı Sil</h2>
+            </div>
+            
+            <div class="alert-warning">
+                <p>Bu rezervasiyanı silmək istədiyinizə əminsiniz? Bu əməliyyat geri qaytarıla bilməz.</p>
+            </div>
+
+            <div class="reservation-details">
+                <div class="detail-row">
+                    <div class="detail-label">Ad:</div>
+                    <div class="detail-value">@Model.FirstName</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Soyad:</div>
+                    <div class="detail-value">@Model.LastName</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Telefon:</div>
+                    <div class="detail-value">@Model.PhoneNumber</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Tarix:</div>
+                    <div class="detail-value">@Model.ReservationDate.ToString("dd.MM.yyyy")</div>
+                </div>
+                <div class="detail-row">
+                    <div class="detail-label">Saat:</div>
+                    <div class="detail-value">@Model.ReservationTime.ToString(@"hh\:mm")</div>
+                </div>
+            </div>
+
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="Id" />
+                <div class="btn-container">
+                    <a asp-action="Index" class="btn btn-outline">
+                        <i class="fas fa-times"></i> Ləğv et
+                    </a>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Sil
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

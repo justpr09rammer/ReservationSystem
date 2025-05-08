@@ -1,0 +1,414 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\data\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:data\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\views\\reservation\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:views\\reservation\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\views\\reservation\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:views\\reservation\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\views\\reservation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:views\\reservation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\views\\reservation\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:views\\reservation\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\views\\reservation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:views\\reservation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\repositories\\barberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:repositories\\barberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:services\\logservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\services\\ilogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:services\\ilogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|c:\\users\\lenovo\\downloads\\reservationsystem (2)\\reservationsystem\\models\\entities\\barber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFF6BED0-546F-488A-9288-64C07138068A}|ReservationSystem.csproj|solutionrelative:models\\entities\\barber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Migrations\\20250507092449_CreateAllTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250507092449_CreateAllTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 24,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\Delete.cshtml",
+              "ViewState": "AgIAAG4AAAAAAAAAAADwv3kAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T10:29:14.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Details.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\Details.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAADwv28AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T10:26:33.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Success.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\Success.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Success.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\Success.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAiwGgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T10:08:01.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Index.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\Index.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAADwv74AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T10:05:19.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Reservation\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Reservation\\Create.cshtml",
+              "RelativeToolTip": "Views\\Reservation\\Create.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAADwv4EAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T10:04:27.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:50:36.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "Controllers\\ReservationController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:47:05.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LogService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Services\\LogService.cs",
+              "RelativeDocumentMoniker": "Services\\LogService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Services\\LogService.cs",
+              "RelativeToolTip": "Services\\LogService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:46:58.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ILogService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Services\\ILogService.cs",
+              "RelativeDocumentMoniker": "Services\\ILogService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Services\\ILogService.cs",
+              "RelativeToolTip": "Services\\ILogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:46:54.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAwwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:43:23.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:42:56.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Barber.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Models\\Entities\\Barber.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Barber.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Models\\Entities\\Barber.cs",
+              "RelativeToolTip": "Models\\Entities\\Barber.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:40:32.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAJEAAAAAAAAAAADwv6QAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T09:40:19.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-07T09:31:39.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T09:30:50.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAIsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T09:30:40.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAuwEUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:29:52.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250507092449_CreateAllTables.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Migrations\\20250507092449_CreateAllTables.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250507092449_CreateAllTables.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Migrations\\20250507092449_CreateAllTables.cs",
+              "RelativeToolTip": "Migrations\\20250507092449_CreateAllTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:24:50.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BarberRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Repositories\\BarberRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\BarberRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Repositories\\BarberRepository.cs",
+              "RelativeToolTip": "Repositories\\BarberRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:23:04.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Data\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Data\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:22:56.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-07T09:18:18.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Downloads\\ReservationSystem (2)\\ReservationSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:18:01.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

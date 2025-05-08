@@ -1,0 +1,229 @@
+﻿@{
+    ViewData["Title"] = "Məxfilik Siyasəti";
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Bərbər App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .privacy-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .privacy-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            padding: 3rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        .privacy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(31, 38, 135, 0.15);
+        }
+
+        .privacy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .privacy-title {
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .privacy-header::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-title {
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            font-size: 1.4rem;
+        }
+
+        .section-content {
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            opacity: 0.9;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(79, 70, 229, 0.15);
+        }
+
+        ul.privacy-list {
+            padding-left: 1.5rem;
+        }
+
+        ul.privacy-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .privacy-container {
+                padding: 0 1.5rem;
+            }
+            
+            .privacy-card {
+                padding: 2rem;
+            }
+            
+            .privacy-title {
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .privacy-container {
+                padding: 0 1rem;
+            }
+            
+            .privacy-card {
+                padding: 1.5rem;
+            }
+            
+            .privacy-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-container">
+        <div class="privacy-card">
+            <div class="privacy-header">
+                <h1 class="privacy-title">Məxfilik Siyasəti</h1>
+                <p class="section-content">Son yenilənmə: @DateTime.Now.ToString("dd MMMM yyyy")</p>
+            </div>
+
+            <h2 class="section-title">1. Məlumat Toplanması</h2>
+            <div class="section-content">
+                <p>Biz aşağıdakı məlumat növlərini toplaya bilərik:</p>
+                <ul class="privacy-list">
+                    <li>Şəxsi identifikasiya məlumatları (ad, soyad, e-poçt, telefon nömrəsi)</li>
+                    <li>İstifadəçi hesab məlumatları (istifadəçi adı, şifrə)</li>
+                    <li>Ödəniş məlumatları (kart məlumatları şifrələnmiş şəkildə saxlanılır)</li>
+                    <li>Texniki məlumatlar (IP ünvanı, brauzer növü, cihaz məlumatları)</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">2. Məlumatların İstifadəsi</h2>
+            <div class="section-content">
+                <p>Toplanan məlumatlar aşağıdakı məqsədlər üçün istifadə olunur:</p>
+                <ul class="privacy-list">
+                    <li>Xidmətlərimizi təqdim etmək və yaxşılaşdırmaq</li>
+                    <li>İstifadəçi hesablarını idarə etmək</li>
+                    <li>Randevu prosesini həyata keçirmək</li>
+                    <li>Təhlükəsizliyi təmin etmək və istifadə şərtlərinə əməl olunmasını yoxlamaq</li>
+                    <li>Müştəri xidmətləri göstərmək</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">3. Məlumatların Paylaşılması</h2>
+            <div class="section-content">
+                <p>Şəxsi məlumatlarınızı üçüncü şəxslərlə yalnız aşağıdakı hallarda paylaşa bilərik:</p>
+                <ul class="privacy-list">
+                    <li>Qanuni öhdəliklərimizi yerinə yetirmək üçün</li>
+                    <li>Xidmətlərimizi təmin edən etibarlı tərəfdaşlarla (yalnız zəruri qədər)</li>
+                    <li>İstifadəçinin açıq razılığı ilə</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">4. Məlumatların Qorunması</h2>
+            <div class="section-content">
+                <p>Şəxsi məlumatlarınızın təhlükəsizliyi bizim üçün prioritetdir. Biz aşağıdakı tədbirləri görürük:</p>
+                <ul class="privacy-list">
+                    <li>Məlumatların şifrələnmiş şəkildə saxlanması</li>
+                    <li>Müntəzəm təhlükəsizlik auditləri</li>
+                    <li>Məhdud işçi girişi</li>
+                    <li>SSL sertifikatı ilə məlumat ötürülməsi</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">5. İstifadəçi Hüquqları</h2>
+            <div class="section-content">
+                <p>İstifadəçilər olaraq siz aşağıdakı hüquqlara maliksiniz:</p>
+                <ul class="privacy-list">
+                    <li>Şəxsi məlumatlarınıza daxil olmaq</li>
+                    <li>Yanlış məlumatları düzəltmək</li>
+                    <li>Hesabınızı silmək</li>
+                    <li>Məlumatların emalına etiraz etmək</li>
+                    <li>Məlumatların portativ surətini almaq</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">6. Dəyişikliklər</h2>
+            <div class="section-content">
+                <p>Bu məxfilik siyasətini vaxtaşırı yeniləyə bilərik. Dəyişikliklər qüvvəyə mindikdə bu səhifədə dərc olunacaq.</p>
+            </div>
+
+            <h2 class="section-title">7. Bizimlə Əlaqə</h2>
+            <div class="section-content">
+                <p>Məxfilik siyasəti ilə bağlı suallarınız varsa, bizimlə əlaqə saxlaya bilərsiniz:</p>
+                <p><i class="fas fa-envelope"></i> Email: məxfilik@berberapp.az</p>
+                <p><i class="fas fa-phone"></i> Telefon: +994 XX XXX XX XX</p>
+            </div>
+
+            <a href="/" class="back-btn"><i class="fas fa-arrow-left"></i> Əsas Səhifəyə Qayıt</a>
+        </div>
+    </div>
+</body>
+</html>

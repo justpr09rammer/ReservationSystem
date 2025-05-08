@@ -1,0 +1,362 @@
+@model ReservationSystem.Models.ViewModels.ReservationViewModel
+@{
+ViewData["Title"] = "Rezervasiya";
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezervasiya Formu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --error: #ef4444;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .reservation-container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .reservation-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            padding: 2.5rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        .reservation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(31, 38, 135, 0.15);
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .card-header h2 {
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            color: var(--dark);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.875rem 1rem 0.875rem 3rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: #fff;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+            outline: none;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            z-index: 2;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(79, 70, 229, 0.1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(79, 70, 229, 0.15);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            padding: 0.875rem;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(99, 102, 241, 0.05);
+        }
+
+        .alert-danger {
+            background-color: #fee2e2;
+            color: var(--error);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--error);
+        }
+
+        #formErrors ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        #formErrors ul li {
+            list-style-type: none;
+            padding: 0.25rem 0;
+        }
+
+        @media (max-width: 480px) {
+            .reservation-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .card-header h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="reservation-container">
+    <div class="reservation-card">
+        <div class="card-header">
+            <h2>Rezervasiya Formu</h2>
+        </div>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+        <div class="alert alert-danger" id="formErrors">
+            <ul id="errorList">
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                <li>@error.ErrorMessage</li>
+                }
+            </ul>
+        </div>
+        }
+        else
+        {
+        <div class="alert alert-danger" id="formErrors" style="display: none;">
+            <ul id="errorList"></ul>
+        </div>
+        }
+
+        <form id="reservationForm" method="post" asp-action="Create">
+            @Html.AntiForgeryToken()
+
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="FirstName">Ad</label>
+                    <input type="text" id="FirstName" name="FirstName" class="form-control" value="@Model.FirstName" placeholder="Adınız" required />
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="LastName">Soyad</label>
+                    <input type="text" id="LastName" name="LastName" class="form-control" value="@Model.LastName" placeholder="Soyadınız" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNumber">Telefon nömrəsi</label>
+                <div style="position: relative;">
+                    <i class="fas fa-phone input-icon"></i>
+                    <input type="text" id="PhoneNumber" name="PhoneNumber" class="form-control" value="@Model.PhoneNumber" placeholder="+994 XX XXX XX XX" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="BarberId">Bərbər</label>
+                <div style="position: relative;">
+                    <i class="fas fa-user-tie input-icon"></i>
+                    <select id="BarberId" name="BarberId" class="form-control" required>
+                        <option value="">Bərbər seçin</option>
+                        @if (ViewBag.Barbers != null)
+                        {
+                        foreach (var barber in ViewBag.Barbers)
+                        {
+                        <option value="@barber.Value">@barber.Text</option>
+                        }
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="ReservationDate">Tarix</label>
+                    <div style="position: relative;">
+                        <i class="fas fa-calendar-day input-icon"></i>
+                        <input type="date" id="ReservationDate" name="ReservationDate" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" required />
+                    </div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="ReservationTime">Saat</label>
+                    <div style="position: relative;">
+                        <i class="fas fa-clock input-icon"></i>
+                        <input type="time" id="ReservationTime" name="ReservationTime" class="form-control" value="@DateTime.Now.ToString("HH:mm")" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" id="submitButton" class="btn-primary">Rezervasiya Et</button>
+                <a href="/Home/Index" class="btn-outline">Ləğv Et</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+    $(document).ready(function() {
+        // Set default date to today
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+        var currentDate = yyyy + '-' + mm + '-' + dd;
+        $("#ReservationDate").val(currentDate);
+
+        // Set default time to current time + 1 hour
+        var hours = String(today.getHours() + 1).padStart(2, '0');
+        var minutes = String(today.getMinutes()).padStart(2, '0');
+        var currentTime = hours + ':' + minutes;
+        $("#ReservationTime").val(currentTime);
+
+        // Phone number formatting
+        $("#PhoneNumber").on('input', function() {
+            var phone = $(this).val().replace(/\D/g, '');
+            if (phone.startsWith('994')) {
+                phone = '+' + phone;
+            } else if (!phone.startsWith('+994') && phone.length > 0) {
+                phone = '+994' + phone;
+            }
+            $(this).val(phone);
+        });
+
+        // Handle form submission via AJAX
+        $("#reservationForm").submit(function(e) {
+            e.preventDefault();
+
+            // Clear previous errors
+            $("#errorList").empty();
+            $("#formErrors").hide();
+
+            // Show loading indicator
+            var submitBtn = $("#submitButton");
+            var originalText = submitBtn.text();
+            submitBtn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Göndərilir...');
+
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: $(this).serialize(),
+                headers: {
+                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val(),
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                success: function(response) {
+                    submitBtn.prop('disabled', false).text(originalText);
+
+                    if (response && response.success === true) {
+                        window.location.href = '/Reservation/Success';
+                    } else {
+                        var errorMsg = response && response.message ? response.message : "Rezervasiya yaradılarkən xəta baş verdi.";
+                        $("#errorList").append("<li>" + errorMsg + "</li>");
+                        $("#formErrors").show();
+                    }
+                },
+                error: function(xhr) {
+                    submitBtn.prop('disabled', false).text(originalText);
+
+                    try {
+                        var response = xhr.responseJSON;
+                        if (response && response.errors) {
+                            $.each(response.errors, function(key, value) {
+                                $("#errorList").append("<li>" + value + "</li>");
+                            });
+                        } else if (response && response.message) {
+                            $("#errorList").append("<li>" + response.message + "</li>");
+                        } else {
+                            $("#errorList").append("<li>Xəta baş verdi. Zəhmət olmasa bir az sonra yenidən cəhd edin.</li>");
+                        }
+                    } catch (e) {
+                        $("#errorList").append("<li>Xəta baş verdi. Zəhmət olmasa bir az sonra yenidən cəhd edin.</li>");
+                    }
+
+                    $("#formErrors").show();
+                }
+            });
+        });
+    });
+</script>
+}
+</body>
+</html>

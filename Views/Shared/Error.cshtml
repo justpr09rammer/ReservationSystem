@@ -1,0 +1,35 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Xəta";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow border-danger">
+            <div class="card-header bg-danger text-white text-center">
+                <h3><i class="fas fa-exclamation-triangle me-2"></i>Xəta baş verdi</h3>
+            </div>
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <i class="fas fa-times-circle text-danger" style="font-size: 4rem;"></i>
+                </div>
+                <p class="lead text-center">Sorğunuz emal edilərkən xəta baş verdi.</p>
+                <p class="text-center">Zəhmət olmasa bir az sonra yenidən cəhd edin və ya administratorla əlaqə saxlayın.</p>
+                
+                @if (Model.ShowRequestId)
+                {
+                    <div class="alert alert-secondary mt-3">
+                        <small>
+                            <strong>Sorğu ID:</strong> <code>@Model.RequestId</code>
+                        </small>
+                    </div>
+                }
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="Reservation" asp-action="Create" class="btn btn-primary">
+                    <i class="fas fa-home me-2"></i>Ana Səhifəyə Qayıt
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
